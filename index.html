@@ -5,16 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graph</title>
+    ]<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
         body{
            width:100%;
            height:100%;
            margin:0;
         }
+        button{
+            height:50px;
+            width:50px;
+        }
+        
     </style>
 </head>
 <body>
     <canvas id="canvas"></canvas>
     <script src="main.js"></script>
+    <div>
+        <h2>Set your main axis:</h2>
+        <div class="origin">
+            <button onclick="OriginX(1)">UP</button>
+            <button onclick="OriginX(2)">Down</button>
+            <button>Left</button>
+            <button>Right</button>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
