@@ -8,30 +8,30 @@
    
     <style>
         body{
+            display:flex;
+            flex-direction: column;
            width:100%;
            height:100%;
-           margin:0;
-        }
-        button{
-            height:50px;
-            width:50px;
         }
         
     </style>
 </head>
 <body>
-    <canvas id="canvas"></canvas>
+    
+    <canvas id="canvas" style="border:4px solid black"></canvas>
+    <script src="functions.js"></script>
     <script src="main.js"></script>
-    <div>
-        <h2>Set your main axis:</h2>
-        <div class="origin">
-            <button onclick="OriginX(1)">UP</button>
-            <button onclick="OriginX(2)">Down</button>
-            <button>Left</button>
-            <button>Right</button>
+    <div class="container" style="border:2px solid black; width:100%;text-align: center;">
+        <h1>Type of equation</h1>
+        <ul>
+            <li>Line</li>
+            <li>Circle</li>
+            <li>Ellipse</li>
+            <li>Parabola</li>
+            <li>Hypebola</li>
 
-            </div>
-        </div>
+        </ul>
     </div>
+
 </body>
 </html>
