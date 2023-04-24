@@ -3,7 +3,7 @@ let canvas = document.getElementById("canvas");
 let ctx= canvas.getContext("2d");
 canvas.height= window.innerHeight;
 canvas.width=window.innerWidth;
-ctx.fillStyle= "lightgrey";
+ctx.fillStyle= "white";
 ctx.fillRect(0,0,canvas.width,canvas.height);
 ctx.fill();
 let mainX=canvas.height/2;
@@ -45,10 +45,27 @@ function mainAxis(){
 }
 Axes();
 mainAxis();
-ctx.beginPath()
-ctx.lineWidth=2
+ctx.lineWidth=7
 ctx.translate(mainY, mainX)
+circle(0,0,10)
+ellipse(0,0,5,8)
+ellipse(0,0,5,10)
+ellipse(0,0,5,11)
+ellipse(0,0,5,12)
+ellipse(0,0,5,13)
+ellipse(0,0,5,14)
+ellipse(0,0,5,15)
+ellipse(0,0,5,16)
+ellipse(0,0,5,17)
+ellipse(0,0,5,18)
 
-circle(3,4,10)
-parabola(24,5,5,0)
-ctx.stroke();
+
+ellipse(0,0,8,5)
+ellipse(0,0,10,5)
+ellipse(0,0,11,5)
+ellipse(0,0,12,5)
+ellipse(0,0,13,5)
+ellipse(0,0,14,5)
+ellipse(0,0,15,5)
+
+
