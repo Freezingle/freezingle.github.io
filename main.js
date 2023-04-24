@@ -47,4 +47,28 @@ function mainAxis(){
 window.onload=()=>{
     Axes();
     mainAxis();
+    ctx.translate(mainY,mainX);
 }
+
+
+$(document).ready(function(){
+$("#btn1").click(function(){
+    $("#optLine").toggle();
+  });
+
+$("#btn2").click(function(){
+    $("#optCircle").toggle();
+});
+$("#btn3").click(function(){
+    $("#optEllipse").toggle();
+});
+
+$("#circleDone").click(function(){
+let circleH= document.getElementById("circleH");
+let circleK= document.getElementById("circleK");
+let circleR = document.getElementById("circleR");
+
+Drawcircle(circleH.value,circleK.value,circleR.value);
+
+});
+});

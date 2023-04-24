@@ -1,4 +1,4 @@
-function parabola(x1,y1,a,type)
+function Drawparabola(x1,y1,a,type)
 { ctx.beginPath()
       x1*=-10;
     y1*=-10;
@@ -80,11 +80,11 @@ function parabola(x1,y1,a,type)
 
 }*/
 
-function circle(x1,y1,radius)
+function Drawcircle(x1,y1,radius)
 {
     ctx.beginPath()
     x1*=10;
-    y1*=10;
+    y1*=-10;
     radius*=10;
     ctx.strokeStyle="darkgreen"
     ctx.arc(x1,y1,radius,0,2*Math.PI);
@@ -117,7 +117,7 @@ function line(m,c)
 
     ctx.stroke();
 }
-function ellipse(h,k,a,b)
+function Drawellipse(h,k,a,b)
 {
     ctx.beginPath();
     ctx.strokeStyle= "#000080"
@@ -155,7 +155,7 @@ function ellipse(h,k,a,b)
   ctx.stroke();
 }
 
-function hyperbola(h,k,a,b,type)
+function Drawhyperbola(h,k,a,b,type)
 {
     ctx.beginPath();
     ctx.strokeStyle ="#461111"
