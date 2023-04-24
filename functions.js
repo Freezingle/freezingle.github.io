@@ -99,14 +99,14 @@ function line(m,c)
 
     ctx.strokeStyle= "darkred";
 
-    for(let x=0; x<700; x+=1)
+    for(let x=0; x<250; x+=1)
     {
         let y=m*x+ c;
         ctx.moveTo(x-1,y);
         ctx.lineTo(x,y);
 
     }
-    for(x=0; x>-700;x-=1)
+    for(x=0; x>-250;x-=1)
     {
         let y=m*x + c;
         ctx.moveTo(x-1,y);
@@ -153,4 +153,77 @@ function ellipse(h,k,a,b)
     ctx.lineTo(x,y)
   }
   ctx.stroke();
+}
+
+function hyperbola(h,k,a,b,type)
+{
+    ctx.beginPath();
+    ctx.strokeStyle ="#461111"
+    h*=-10;
+    k*=-10;
+    a*=-10;
+    b*=-10;
+
+    if(type==1)
+    {
+    for(x=0;x<250;x+=1)
+    {
+    let y= Math.sqrt((1+(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
+    ctx.moveTo(x-1,y);
+    ctx.lineTo(x,y)
+    }
+
+    for(x=0; x>-250;x-=1)
+    {
+      let y= Math.sqrt((1+(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
+      ctx.moveTo(x-1,y);
+      ctx.lineTo(x,y)
+    }
+
+    for (x=0;x<250;x+=1)
+  {
+    let y= -Math.sqrt((1+(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
+    ctx.moveTo(x-1,y);
+    ctx.lineTo(x,y)
+  }
+  for(x=0; x>-250;x-=1)
+  {
+    
+    let y= -Math.sqrt((1+(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
+    ctx.moveTo(x-1,y);
+    ctx.lineTo(x,y)
+  }
+}
+else{
+    for(y=0;y<250;y+=1)
+    {
+    let x= Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
+    ctx.moveTo(x,y-1);
+    ctx.lineTo(x,y)
+    }
+
+    for(y=0; y>-250;y-=1)
+    {
+      let x= Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
+      ctx.moveTo(x,y-1);
+      ctx.lineTo(x,y)
+    }
+
+    for (y=0;y<250;y+=1)
+  {
+    let x= -Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
+    ctx.moveTo(x,y-1);
+    ctx.lineTo(x,y)
+  }
+  for(y=0; y>-250;y-=1)
+  {
+    
+    let x= -Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(b,2))+h;
+    ctx.moveTo(x,y-1);
+    ctx.lineTo(x,y)
+  }
+
+}
+  ctx.stroke();
+
 }

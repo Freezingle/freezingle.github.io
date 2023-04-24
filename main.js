@@ -43,29 +43,8 @@ function mainAxis(){
     ctx.stroke();
 
 }
-Axes();
-mainAxis();
-ctx.lineWidth=7
-ctx.translate(mainY, mainX)
-circle(0,0,10)
-ellipse(0,0,5,8)
-ellipse(0,0,5,10)
-ellipse(0,0,5,11)
-ellipse(0,0,5,12)
-ellipse(0,0,5,13)
-ellipse(0,0,5,14)
-ellipse(0,0,5,15)
-ellipse(0,0,5,16)
-ellipse(0,0,5,17)
-ellipse(0,0,5,18)
 
-
-ellipse(0,0,8,5)
-ellipse(0,0,10,5)
-ellipse(0,0,11,5)
-ellipse(0,0,12,5)
-ellipse(0,0,13,5)
-ellipse(0,0,14,5)
-ellipse(0,0,15,5)
-
-
+window.onload=()=>{
+    Axes();
+    mainAxis();
+}
