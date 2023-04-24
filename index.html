@@ -45,7 +45,7 @@
                 <div>
                     <Button id="btn1">Line</Button>
                 </div>
-                <div id="optLine" style="display:none">y= <input type="number"> x+ <input type="number"> <button id="lineDone">Done</button></div>
+                <div id="optLine" style="display:none">y= <input type="number" id="lineM"> x+ <input type="number" id="lineC"> <button id="lineDone">Done</button></div>
                 </li>
             <li>
                 <div>
@@ -55,9 +55,13 @@
             </li>
             <li> <div>
                 <Button id="btn3">Ellipse</Button>
-                <div id="optEllipse" style="display:none">((x-<input type="number">)^2/(<input type="number">)^2) + ((y-<input type="number">)^2/ (<input type="number">)^2) =1<button id="ellipseDone">Done</button></div>
+                <div id="optEllipse" style="display:none">((x-<input type="number" id="ellipseH">)^2/(<input type="number" id="ellipseA">)^2) + ((y-<input type="number" id="ellipseK">)^2/ (<input type="number" id="ellipseB">)^2) =1<button id="ellipseDone">Done</button></div>
                 </div></li>
-            <li>Parabola</li>
+            <li>
+                <div>
+                    Parabola
+                </div>
+            </li>
             <li>Hyperbola</li>
 
         </ul>

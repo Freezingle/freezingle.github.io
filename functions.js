@@ -91,7 +91,7 @@ function Drawcircle(x1,y1,radius)
     ctx.stroke();
 }
 
-function line(m,c)
+function Drawline(m,c)
 {
     ctx.beginPath()
     m*=-1; // this is angle so it doenst need to change
@@ -120,19 +120,20 @@ function line(m,c)
 function Drawellipse(h,k,a,b)
 {
     ctx.beginPath();
+   
     ctx.strokeStyle= "#000080"
   a*=-10;
   b*=-10;
   h*=-10;
   k*=-10;
   
-  for (x=0;x<250;x+=1)
+  for (x=0;x<1700;x+=1)
   {
     let y= -Math.sqrt((1-(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
     ctx.moveTo(x-1,y);
     ctx.lineTo(x,y)
   }
-  for(x=0; x>-250;x-=1)
+  for(x=0; x>-1700;x-=1)
   {
     
     let y= -Math.sqrt((1-(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
@@ -140,13 +141,13 @@ function Drawellipse(h,k,a,b)
     ctx.lineTo(x,y)
   }
 
-  for (x=0;x<250;x+=1)
+  for (x=0;x<1700;x+=1)
   {
     let y= Math.sqrt((1-(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
     ctx.moveTo(x-1,y);
     ctx.lineTo(x,y)
   }
-  for(x=0; x>-250;x-=1)
+  for(x=0; x>-1700;x-=1)
   {
     let y= Math.sqrt((1-(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
     ctx.moveTo(x-1,y);

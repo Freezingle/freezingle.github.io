@@ -71,4 +71,17 @@ let circleR = document.getElementById("circleR");
 Drawcircle(circleH.value,circleK.value,circleR.value);
 
 });
+$("#lineDone").click(function(){
+    let lineM= document.getElementById("lineM");
+    let lineC = document.getElementById("lineC");
+
+    Drawline(lineM.value,lineC.value);
+});
+$("#ellipseDone").click(function(){
+    let ellipseH= document.getElementById("ellipseH");
+    let ellipseK = document.getElementById("ellipseK");
+    let ellipseA= document.getElementById("ellipseA");
+    let ellipseB = document.getElementById("ellipseB");
+    Drawellipse(ellipseH.value, ellipseK.value, ellipseA.value, ellipseB.value);
+})
 });
