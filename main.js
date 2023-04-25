@@ -120,9 +120,6 @@ $("#hyperbolaDone2").click(function(){
     Drawhyperbola(hyperbolaH.value,hyperbolaK.value,hyperbolaA.value,hyperbolaB.value,2);
 
 })
-
-
-
 });
 
 

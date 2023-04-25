@@ -7,13 +7,13 @@ function Drawparabola(x1,y1,a,type)
    
     if(type==1)
     {
-    for (let x=0; x<500;x+=1)
+    for (let x=0; x<1000;x+=1)
     {        
         let y= (Math.pow((x-x1),2)/(4*a))+y1;
         ctx.moveTo(x-1,y);
         ctx.lineTo(x,y);
     }
-    for ( x=0; x>-500;x-=1)
+    for ( x=0; x>-1000;x-=1)
     {        
         
         let y=(Math.pow((x-x1),2)/(4*a))+y1;
@@ -23,14 +23,14 @@ function Drawparabola(x1,y1,a,type)
     }
     }
     else{
-        for(let y=0;y<700;y+=1)
+        for(let y=0;y<1000;y+=1)
         {
             let x= (Math.pow((y-y1),2)/(4*a*-1))+x1;
             ctx.moveTo(x,y-1);
             ctx.lineTo(x,y);
           
         }
-        for ( y=0; y>-700;y-=1)
+        for ( y=0; y>-1000;y-=1)
         {
             let x= (Math.pow((y-y1),2)/(4*a*-1))+x1;
             ctx.moveTo(x,y-1);
@@ -59,14 +59,14 @@ function Drawline(m,c)
 
     ctx.strokeStyle= "darkred";
 
-    for(let x=0; x<250; x+=1)
+    for(let x=0; x<1000; x+=1)
     {
         let y=m*x+ c;
         ctx.moveTo(x-1,y);
         ctx.lineTo(x,y);
 
     }
-    for(x=0; x>-250;x-=1)
+    for(x=0; x>-1000;x-=1)
     {
         let y=m*x + c;
         ctx.moveTo(x-1,y);
@@ -87,13 +87,13 @@ function Drawellipse(h,k,a,b)
   h*=10;
   k*=-10;
   
-  for (x=0;x<1700;x+=1)
+  for (x=0;x<1000;x+=1)
   {
     let y= -Math.sqrt((1-(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
     ctx.moveTo(x-1,y);
     ctx.lineTo(x,y)
   }
-  for(x=0; x>-1700;x-=1)
+  for(x=0; x>-1000;x-=1)
   {
     
     let y= -Math.sqrt((1-(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
@@ -101,13 +101,13 @@ function Drawellipse(h,k,a,b)
     ctx.lineTo(x,y)
   }
 
-  for (x=0;x<1700;x+=1)
+  for (x=0;x<1000;x+=1)
   {
     let y= Math.sqrt((1-(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
     ctx.moveTo(x-1,y);
     ctx.lineTo(x,y)
   }
-  for(x=0; x>-1700;x-=1)
+  for(x=0; x>-1000;x-=1)
   {
     let y= Math.sqrt((1-(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
     ctx.moveTo(x-1,y);
@@ -127,27 +127,27 @@ function Drawhyperbola(h,k,a,b,type)
 
     if(type==1)
     {
-    for(x=0;x<250;x+=1)
+    for(x=0;x<1000;x+=1)
     {
     let y= Math.sqrt((1+(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
     ctx.moveTo(x-1,y);
     ctx.lineTo(x,y)
     }
 
-    for(x=0; x>-250;x-=1)
+    for(x=0; x>-1000;x-=1)
     {
       let y= Math.sqrt((1+(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
       ctx.moveTo(x-1,y);
       ctx.lineTo(x,y)
     }
 
-    for (x=0;x<250;x+=1)
+    for (x=0;x<1000;x+=1)
   {
     let y= -Math.sqrt((1+(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
     ctx.moveTo(x-1,y);
     ctx.lineTo(x,y)
   }
-  for(x=0; x>-250;x-=1)
+  for(x=0; x>-1000;x-=1)
   {
     
     let y= -Math.sqrt((1+(Math.pow((x-h),2)/Math.pow(a,2)))*Math.pow(b,2))+k;
@@ -156,21 +156,21 @@ function Drawhyperbola(h,k,a,b,type)
   }
 }
 else{
-    for(y=0;y<250;y+=1)
+    for(y=0;y<1000;y+=1)
     {
     let x= Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
     ctx.moveTo(x,y-1);
     ctx.lineTo(x,y)
     }
 
-    for(y=0; y>-250;y-=1)
+    for(y=0; y>-1000;y-=1)
     {
       let x= Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
       ctx.moveTo(x,y-1);
       ctx.lineTo(x,y)
     }
 
-    for (y=0;y<250;y+=1)
+    for (y=0;y<1000;y+=1)
   {
     let x= -Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
     ctx.moveTo(x,y-1);
@@ -178,7 +178,7 @@ else{
     console.log(x,y)
     
   }
-  for(y=0; y>-250;y-=1)
+  for(y=0; y>-1000;y-=1)
   {
     
     let x= -Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
@@ -186,8 +186,6 @@ else{
     ctx.lineTo(x,y)
     console.log(x,y)
   }
-
 }
-  ctx.stroke();
-
+ctx.stroke();
 }
