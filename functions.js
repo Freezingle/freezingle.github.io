@@ -1,6 +1,6 @@
 function Drawparabola(x1,y1,a,type)
 { ctx.beginPath()
-      x1*=-10;
+      x1*=10;
     y1*=-10;
     a*=-10; 
     ctx.strokeStyle= "blue";
@@ -84,7 +84,7 @@ function Drawellipse(h,k,a,b)
     ctx.strokeStyle= "#000080"
   a*=-10;
   b*=-10;
-  h*=-10;
+  h*=10;
   k*=-10;
   
   for (x=0;x<1700;x+=1)
@@ -120,7 +120,7 @@ function Drawhyperbola(h,k,a,b,type)
 {
     ctx.beginPath();
     ctx.strokeStyle ="#461111"
-    h*=-10;
+    h*=10;
     k*=-10;
     a*=-10;
     b*=-10;
