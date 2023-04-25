@@ -62,7 +62,12 @@ $("#btn2").click(function(){
 $("#btn3").click(function(){
     $("#optEllipse").toggle();
 });
-
+$("#btn4").click(function(){
+    $("#optParabola").toggle();
+});
+$("#btn5").click(function(){
+    $("#optHyperbola").toggle();
+});
 $("#circleDone").click(function(){
 let circleH= document.getElementById("circleH");
 let circleK= document.getElementById("circleK");
@@ -83,5 +88,45 @@ $("#ellipseDone").click(function(){
     let ellipseA= document.getElementById("ellipseA");
     let ellipseB = document.getElementById("ellipseB");
     Drawellipse(ellipseH.value, ellipseK.value, ellipseA.value, ellipseB.value);
-})
 });
+$("#parabolaDone1").click(function(){
+let parabolaH=document.getElementById("parabolaH");
+let parabolaK= document.getElementById("parabolaK");
+let parabolaA= document.getElementById("parabolaA");
+
+    Drawparabola(parabolaH.value,parabolaK.value,parabolaA.value,1)
+});
+$("#parabolaDone2").click(function(){
+    let parabolaH=document.getElementById("parabolaH");
+    let parabolaK= document.getElementById("parabolaK");
+    let parabolaA= document.getElementById("parabolaA");
+    Drawparabola(parabolaH.value,parabolaK.value,parabolaA.value,0)
+});
+$("#hyperbolaDone1").click(function(){
+    let hyperbolaH= document.getElementById("hyperbolaH");
+    let hyperbolaK= document.getElementById("hyperbolaK");
+    let hyperbolaA= document.getElementById("hyperbolaA");
+    let hyperbolaB= document.getElementById("hyperbolaB");
+
+    Drawhyperbola(hyperbolaH.value,hyperbolaK.value,hyperbolaA.value,hyperbolaB.value,1);
+
+});
+$("#hyperbolaDone2").click(function(){
+    let hyperbolaH= document.getElementById("hyperbolaH");
+    let hyperbolaK= document.getElementById("hyperbolaK");
+    let hyperbolaA= document.getElementById("hyperbolaA");
+    let hyperbolaB= document.getElementById("hyperbolaB");
+
+    Drawhyperbola(hyperbolaH.value,hyperbolaK.value,hyperbolaA.value,hyperbolaB.value,2);
+
+})
+
+
+
+});
+
+
+
+
+//finish the overall coding
+//leave only responsive design for next day(if possible finish tommorow and be done with this project)

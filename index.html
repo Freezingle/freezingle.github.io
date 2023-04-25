@@ -59,10 +59,33 @@
                 </div></li>
             <li>
                 <div>
-                    Parabola
+                  <button id="btn4">Parabola</button>
+                  <div id="optParabola" style="display:none">
+                    <div>
+                        vertex
+                   <input type="number" id="parabolaH" placeholder="h">
+                   <input type="number" id="parabolaK" placeholder="k">
+                   a: <input type="number" id="parabolaA">
+                   </div>
+                   <div>Type: <button id="parabolaDone1">(x-h)^2=4a(y-k)</button></div>
+                   <div>Type:<button id="parabolaDone2">(y-k)^2=4a(x-h)</button></div>
+                </div>
                 </div>
             </li>
-            <li>Hyperbola</li>
+            <li>
+                <button id="btn5">Hyperbola</button>
+                <div id="optHyperbola" style="display:none">
+                 <div>
+                    center
+                    <input type="number" id="hyperbolaH" placeholder="h">
+                    <input type="number" id="hyperbolaK" placeholder="k">
+                    a: <input type="number" id="hyperbolaA">
+                    b: <input type="number" id="hyperbolaB">
+                 </div>
+                  <div>Type: <button id="hyperbolaDone1">Along Y axis</button></div>
+                  <div>Type: <button id="hyperbolaDone2">Along X axis</button></div>
+                </div>
+            </li>
 
         </ul>
     </div>
