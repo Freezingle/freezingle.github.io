@@ -175,13 +175,16 @@ else{
     let x= -Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
     ctx.moveTo(x,y-1);
     ctx.lineTo(x,y)
+    console.log(x,y)
+    
   }
   for(y=0; y>-250;y-=1)
   {
     
-    let x= -Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(b,2))+h;
+    let x= -Math.sqrt((1+(Math.pow((y-k),2)/Math.pow(b,2)))*Math.pow(a,2))+h;
     ctx.moveTo(x,y-1);
     ctx.lineTo(x,y)
+    console.log(x,y)
   }
 
 }
