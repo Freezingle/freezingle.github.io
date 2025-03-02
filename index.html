@@ -103,6 +103,27 @@ div[id^="opt"] {
     display: none;
     margin-top: 10px;
 }
+
+.footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #0056b3;
+        }
     </style>
 
 
@@ -168,7 +189,9 @@ div[id^="opt"] {
         <canvas id="canvas"></canvas>
        
     </div>
-    <a href="https://beam-analysis.netlify.app/">Go to  Beam Analysis</a>
+    <div class="footer">
+        <a href="https://beam-analysis.netlify.app/">Go to Beam Analysis</a>
+    </div>
     <script>
         
 let canvas = document.getElementById("canvas");
